@@ -37,9 +37,10 @@ $api = new CopernicaRestAPI("your-access-token", 3);
 
 // parameters voor de methode
 $parameters = array(
-    'start'     =>  '2020-01-01',
+    'begin'     =>  '2020-01-01',
     'end'       =>  '2021-01-01',
 );
+
 
 // voer methode uit en print resultaat
 print_r($api->get("consumption", $parameters));
